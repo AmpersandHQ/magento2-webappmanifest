@@ -7,7 +7,7 @@ use Ampersand\WebAppManifest\Helper\Config;
 use Magento\Framework\UrlInterface;
 use Magento\Framework\View\Element\Block\ArgumentInterface;
 
-class Manifest implements ArgumentInterface
+class Link implements ArgumentInterface
 {
     /** @var Config */
     private $config;

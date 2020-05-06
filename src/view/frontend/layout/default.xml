@@ -3,10 +3,16 @@
       xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceBlock name="head.additional">
-            <block name="webappmanifest.register" class="Magento\Framework\View\Element\Template"
-                   template="Ampersand_WebAppManifest::manifest.phtml">
+            <block name="webappmanifest.link" class="Magento\Framework\View\Element\Template"
+                   template="Ampersand_WebAppManifest::link.phtml">
                 <arguments>
-                    <argument name="view_model" xsi:type="object">Ampersand\WebAppManifest\ViewModel\Manifest</argument>
+                    <argument name="view_model" xsi:type="object">Ampersand\WebAppManifest\ViewModel\Link</argument>
+                </arguments>
+            </block>
+            <block name="webappmanifest.meta" class="Magento\Framework\View\Element\Template"
+                   template="Ampersand_WebAppManifest::meta.phtml">
+                <arguments>
+                    <argument name="view_model" xsi:type="object">Ampersand\WebAppManifest\ViewModel\Meta</argument>
                 </arguments>
             </block>
         </referenceBlock>

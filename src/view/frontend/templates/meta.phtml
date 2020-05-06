@@ -1,0 +1,14 @@
+<?php
+/**
+ * Meta template
+ *
+ * @var \Magento\Framework\View\Element\Template $block
+ * @var \Ampersand\WebAppManifest\ViewModel\Meta $viewModel
+ */
+
+$viewModel = $block->getData('view_model');
+?>
+
+<?php if ($viewModel->isManifestEnabled()): ?>
+    <meta name="theme-color" content="<?= $block->escapeHtmlAttr($viewModel->getThemeColour()) ?>"/>
+<?php endif; ?>
